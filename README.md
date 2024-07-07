@@ -1,5 +1,6 @@
 # event-manager
-Event Management app using react and node.js
+Event Management app using react.js for the front-end. Using node.js and MySQL for the backend
+
 (The main page with no events added)
 ![Screenshot from 2024-07-08 00-01-17](https://github.com/juniortmitchell/event-manager/assets/116076282/f69ae912-d510-40ec-a95a-f797e9f35616)
 
