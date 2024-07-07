@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* container for the events
+displays in a grid of three
+I think there is a better way of doing 3's but using percentage right now */
+.event-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* styling for the events that get displayed */
+.event {
+  border: 2px solid rgba(136, 128, 128, 0.844);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  overflow:scroll;
+}
+
+/* browny reddish glow over the delete button to indicate that its gonna get deleted */
+.event > button:hover{
+  border: 2px solid saddlebrown;
+}
+
+/* styling for the form container this just handles spacing/format */
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* styling for the form */
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(136, 128, 128, 0.844);
+  border-radius: 10px;
+  padding: 1em;
+  width: 30em;
+}
+
+/* adds a margin around every input field in the form as they are in their own divs */
+.form > div {
+  margin: 0.2em;
+}
+
+/* sets width and alignsthe button in the form  */
+.form > button {
+  width: 15em;
+  align-self: center;
+  margin-top: 0.5em;
+}
+
+/* adds a margin around filters */
+.filters {
+  margin: 1em;
+}
+
+/* adjusts size, font size and margin of the filters button */
+.filters > button {
+  height: 3em;
+  font-size: 10px;
+  margin-left: 1em;
+}
+
+
+/* I know there is a way to chain .form and .filters together but it will not work for some reason */
+.form > button:hover{
+  border: 2px solid rgba(136, 128, 128, 0.844)
+}
+/* Adds a grey border on buttons hovered over to show user that they are able to click them */
+.filters > button:hover{
+  border: 2px solid rgba(136, 128, 128, 0.844)
+}
+
+.show-form-button:hover{
+  border: 2px solid rgba(136, 128, 128, 0.844)
+}
